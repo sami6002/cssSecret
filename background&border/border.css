@@ -241,7 +241,7 @@ body {
     width: 200px;
     padding: 1em;
     border: 1em solid transparent;
-    border-image: url(../images/stone-art.jpg) 30 30 round;
+    border-image: url(images/stone-art.jpg) 30 30 round;
     background-color: #fff;
 }
 
