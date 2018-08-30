@@ -1,0 +1,303 @@
+body {
+    background: orange;
+    padding: 0;
+    margin: 0;
+    border: 10px solid #ffffff;
+}
+.inline-block {
+    display: inline-block;
+}
+.border-transparent-1 {
+    border: 10px dashed hsla(0, 0%, 100%, .5);
+    background: green;
+    padding: 10px;
+    margin: 10px;
+}
+
+.border-transparent-2 {
+    border: 10px solid hsla(0, 0%, 100%, .5);
+    background: green;
+    background-clip: padding-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+.border-transparent-3 {
+    border: 10px solid hsla(0, 0%, 100%, .5);
+    background: green;
+    background-clip: content-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+.border-multi-1 {
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(255,255,255,0.6);
+}
+
+.border-multi-2 {
+    margin-top: 30px;
+    background: yellowgreen;
+    box-shadow: inset 0 0 0 10px #655, inset 0 0 0 15px deeppink;
+    padding: 15px;
+}
+
+.border-multi-3 {
+    margin-top: 30px;
+    background: yellowgreen;
+    border: 10px solid #655;
+    outline: 5px solid deeppink;
+}
+
+.border-multi-4 {
+    margin-top: 30px;
+    background: #655;
+    outline: 1px dashed #ffffff;
+    outline-offset: -6px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.border-inner-radius-1 {
+    background: tan;
+    border-radius: 0.8em;
+    padding: 1em;
+    box-shadow: 0 0 0 0.6em #655;
+    outline: 0.7em solid #655;
+}
+
+.background-line-1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#fb3 50%,#58a 0);
+    background-size: 100% 40px;
+    margin-bottom: 30px;
+}
+
+.background-line-2 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%, yellowgreen 0);
+    background-size: 100% 40px;
+    margin-bottom: 30px;
+}
+
+.background-vertical-1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right,#fb3 50%,#58a 0);
+    background-size: 40px 100%;
+    margin-bottom: 30px;
+}
+
+.background-vertical-2 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right,#fb3 33.3%,#58a 0,#58a 66.6%, yellowgreen 0);
+    background-size: 40px 100%;
+    margin-bottom: 30px;
+}
+
+.background-skew-1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(45deg,#fb3 50%,#58a 0);
+    background-size: 40px 40px;
+    margin-bottom: 30px;
+}
+
+.background-skew-1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(45deg,#fb3 50%,#58a 0);
+    background-size: 40px 40px;
+    margin-bottom: 30px;
+}
+
+.background-skew-2 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);
+    background-size: 57px 57px;
+    margin-bottom: 30px;
+}
+
+.background-skew-3 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(60deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);
+    background-size: 57px 57px;
+    margin-bottom: 30px;
+}
+
+.background-skew-4 {
+    height: 200px;
+    width: 200px;
+    background: repeating-linear-gradient(60deg,#fb3, #fb3 20px, #58a 0,#58a 40px);
+    margin-bottom: 30px;
+}
+
+.background-skew-5 {
+    height: 200px;
+    width: 200px;
+    background: #58a;
+    background-image: repeating-linear-gradient(30deg,
+                        hsla(0,0%,100%,0.1),
+                        hsla(0,0%,100%,0.1) 20px,
+                        transparent 0,
+                        transparent 40px);
+    margin-bottom: 30px;
+}
+
+.background-grid-1 {
+    height: 200px;
+    width: 200px;
+    background: white;
+    background-image: linear-gradient(90deg, rgba(200,0,0,0.5) 50%, transparent 0),linear-gradient(rgba(200,0,0,0.5) 50%, transparent 0);
+    background-size: 40px 40px;
+}
+
+.background-grid-2 {
+    height: 200px;
+    width: 200px;
+    background: #58a;
+    background-image: linear-gradient(90deg,#ffffff 1px, transparent 0),linear-gradient(#ffffff 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+.background-grid-3 {
+    height: 200px;
+    width: 200px;
+    background: #58a;
+    background-image: linear-gradient(90deg,#ffffff 2px, transparent 0),linear-gradient(#ffffff 2px, transparent 0),linear-gradient(90deg,hsla(0,0%,100%,0.3) 1px, transparent 0),linear-gradient(hsla(0,0%,100%,0.3) 1px, transparent 0);
+    background-size: 80px 80px,80px 80px,20px 20px,20px 20px;
+}
+
+.background-radial-1 {
+    height: 200px;
+    width: 200px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0);
+    background-size: 40px 40px;
+}
+
+.background-radial-2 {
+    height: 200px;
+    width: 200px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+
+.language {
+    height: 30px;
+    width: 80px;
+    background: linear-gradient(45deg, blue 50%, white 0);
+}
+
+.background-chess-1 {
+    height: 200px;
+    width: 200px;
+    background: #eee;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 0),
+                      linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 0);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px,20px 20px, 40px 40px;
+}
+
+.background-chess-2 {
+    height: 200px;
+    width: 200px;
+    background: #ffffff;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.25) 25%, transparent 0,transparent 75%, rgba(0,0,0,0.25) 0),
+                      linear-gradient(45deg, rgba(0,0,0,0.25) 25%, transparent 0,transparent 75%, rgba(0,0,0,0.25) 0);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+.background-chess-3 {
+    height: 200px;
+    width: 200px;
+    background-image: repeating-conic-gradient(#bbb 0, #bbb 25%, #eee 0, #eee 50%);
+    background-size: 40px 40px;
+}
+
+.background-random-1 {
+    height: 200px;
+    width: 200px;
+    background: hsla(20,40%,90%);
+    background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
+                      linear-gradient(90deg, #ab4 23px, transparent 0),
+                      linear-gradient(90deg, #655 41px, transparent 0);
+    background-size: 41px 100%, 61px 100%, 83px 100%;
+}
+
+.background-image-border-1 {
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    border: 1em solid transparent;
+    border-image: url(../images/stone-art.jpg) 30 30 round;
+    background-color: #fff;
+}
+
+.background-image-border-2 {
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white,white), url(../images/stone-art.jpg);
+    background-size: cover;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}
+
+.backrgound-envelope-1 {
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
+}
+
+.backrgound-envelope-2 {
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    border: 16px solid transparent;
+    background-color: #ffffff;
+    /* background-clip: padding-box; */
+    border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+}
+
+.marching-ants {
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    border: 1px solid transparent;
+    background: linear-gradient(white,white) padding-box,
+                repeating-linear-gradient(-45deg,black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+}
+
+@keyframes ants {
+    to {
+        background-position: 100%;
+    }
+}
+
+.marching-ants-1 {
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    border-top: 0.2em solid transparent;
+    border-image: 100% 0 0 linear-gradient(90deg, currentColor 4em, transparent 0);
+    padding-top: 1em;
+    animation: ants 12s linear infinite;
+    color: #ffffff;
+}
