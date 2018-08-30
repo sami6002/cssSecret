@@ -250,7 +250,7 @@ body {
     width: 200px;
     padding: 1em;
     border: 1em solid transparent;
-    background: linear-gradient(white,white), url(../images/stone-art.jpg);
+    background: linear-gradient(white,white), url(images/stone-art.jpg);
     background-size: cover;
     background-clip: padding-box, border-box;
     background-origin: border-box;
